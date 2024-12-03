@@ -29,6 +29,15 @@ add_executable(Enlightenment
         zclient/app/window.h
         zclient/app/event.h
         zclient/app/linux-x64/window.c
+        zclient/enc/algo/aes.h
+        zclient/enc/algo/rsa.h
+        zclient/enc/algo/dh.h
+        zclient/enc/e2ee/e2ee.h
+        zclient/enc/keymgr/manager.h
+        zclient/enc/keymgr/store.h
+        zclient/enc/keymgr/serialization.h
+        zclient/enc/util/hash.h
+        zclient/enc/util/crypto.h
 )
 
 target_include_directories(Enlightenment PRIVATE zclient)
