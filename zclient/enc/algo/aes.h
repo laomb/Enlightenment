@@ -1,6 +1,22 @@
 //
 // Created by NotBonzo on 12/3/2024.
 //
+/**
+ * @file aes.h
+ * @brief AES (Advanced Encryption Standard) API for encryption and decryption.
+ *
+ * This header provides an interface for using AES in various modes
+ * (ECB, CBC, CTR) for encryption and decryption of data blocks.
+ *
+ * Modes like CBC require an initialization vector (IV) while ECB operates
+ * on fixed-size blocks without additional input. Key sizes of 128, 192,
+ * and 256 bits are supported.
+ *
+ * Notes:
+ * - Ensure the input length is a multiple of AES_BLOCK_SIZE (16 bytes).
+ * - For dynamic memory handling, the caller must ensure proper cleanup
+ *   for keys and IVs unless otherwise noted. AES Context is cleaned up and initialised by callie
+ */
 #ifndef AES_H
 #define AES_H
 
